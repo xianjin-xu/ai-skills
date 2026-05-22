@@ -1,5 +1,5 @@
 ---
-name: pr-auto-review
+name: pr-auto-review-skill
 description: 自动拉取 GitHub PR 或 GitLab MR 到本地临时分支，进行代码差异对比和 Code Review。当用户提到"PR Review"、"代码审查"、"Review PR"、"拉取PR"、"对比PR变更"时触发此 Skill。使用纯 git 命令，不依赖 gh/glab CLI。支持提供 PR/MR URL 自动完成：解析URL→git fetch拉取→本地创建临时分支→git diff获取变更→AI 代码审查→输出 Markdown 格式 Review 报告。
 ---
 
