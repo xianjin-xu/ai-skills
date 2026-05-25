@@ -1,41 +1,185 @@
-# Transfer
+# Transfer (穿梭框)
 
 ## 概述
 
-Transfer 组件（穿梭框）
+`Transfer` 组件用于**在两个列表之间移动数据**，常用于权限分配、角色分配等场景。
 
-> Transfer Component
+**主要特性**：
+- 支持搜索功能
+- 支持单选/多选
+- 可自定义显示内容
+- 支持禁用状态
+- 支持不同尺寸
 
-**分类**: 表单输入
-**在线演示**: [https://www.blazor.zone/transfer](https://www.blazor.zone/transfer)
+**在线演示**: https://www.blazor.zone/transfer
+
+---
+
+## 使用场景
+
+### 1. 基础用法（简单穿梭框）
+
+`Transfer` 组件可以通过 `Items` 参数绑定数据源。
+
+```razor
+<!-- 基础穿梭框 -->
+<Transfer Items="TransferItems" @bind-Value="SelectedValues" />
+
+@code {
+    private List<TransferItem> TransferItems { get; set; } = new List<TransferItem>
+    {
+        new TransferItem("1", "选项 1"),
+        new TransferItem("2", "选项 2"),
+        new TransferItem("3", "选项 3"),
+        new TransferItem("4", "选项 4"),
+        new TransferItem("5", "选项 5")
+    };
+
+    private List<string> SelectedValues { get; set; } = new List<string>();
+}
+```
+
+---
+
+### 2. 搜索功能（ShowSearch）
+
+通过设置 `ShowSearch="true"` 启用搜索功能。
+
+```razor
+<!-- 带搜索的穿梭框 -->
+<Transfer Items="TransferItems" @bind-Value="SelectedValues" ShowSearch="true" />
+
+@code {
+    private List<TransferItem> TransferItems { get; set; } = new List<TransferItem>
+    {
+        new TransferItem("1", "选项 1"),
+        new TransferItem("2", "选项 2"),
+        new TransferItem("3", "选项 3")
+    };
+
+    private List<string> SelectedValues { get; set; } = new List<string>();
+}
+```
+
+---
+
+### 3. 自定义显示内容（ItemTemplate）
+
+通过 `ItemTemplate` 参数自定义选项显示内容。
+
+```razor
+<!-- 自定义显示 -->
+<Transfer Items="TransferItems" @bind-Value="SelectedValues">
+    <ItemTemplate>
+        <div>
+            <strong>@context.Text</strong>
+            <small>ID: @context.Value</small>
+        </div>
+    </ItemTemplate>
+</Transfer>
+
+@code {
+    private List<TransferItem> TransferItems { get; set; } = new List<TransferItem>
+    {
+        new TransferItem("1", "选项 1"),
+        new TransferItem("2", "选项 2")
+    };
+
+    private List<string> SelectedValues { get; set; } = new List<string>();
+}
+```
+
+---
+
+### 4. 禁用状态（Disabled）
+
+通过设置 `Disabled="true"` 禁用穿梭框。
+
+```razor
+<!-- 禁用穿梭框 -->
+<Transfer Items="TransferItems" @bind-Value="SelectedValues" Disabled="true" />
+
+@code {
+    private List<TransferItem> TransferItems { get; set; } = new List<TransferItem>
+    {
+        new TransferItem("1", "选项 1"),
+        new TransferItem("2", "选项 2")
+    };
+
+    private List<string> SelectedValues { get; set; } = new List<string>();
+}
+```
+
+---
+
+### 5. 不同尺寸（Size）
+
+通过 `Size` 参数设置穿梭框尺寸。
+
+```razor
+<!-- 小尺寸 -->
+<Transfer Items="TransferItems" @bind-Value="SelectedValues" Size="Size.Small" />
+
+<!-- 中尺寸（默认） -->
+<Transfer Items="TransferItems" @bind-Value="SelectedValues" Size="Size.Medium" />
+
+<!-- 大尺寸 -->
+<Transfer Items="TransferItems" @bind-Value="SelectedValues" Size="Size.Large" />
+
+@code {
+    private List<TransferItem> TransferItems { get; set; } = new List<TransferItem>
+    {
+        new TransferItem("1", "选项 1"),
+        new TransferItem("2", "选项 2")
+    };
+
+    private List<string> SelectedValues { get; set; } = new List<string>();
+}
+```
+
+---
 
 ## 参数 (Parameters)
 
+### Transfer 组件参数
+
 | 参数名 | 类型 | 默认值 | 说明 |
 |--------|------|--------|------|
-| `Items` | `IEnumerable<SelectedItem>?` | `}` | 获得/设置 组件绑定数据项集合 |
-| `Task` | `Func<IEnumerable<SelectedItem>,` | `}` | 获得/设置 选中项集合发生改变时回调委托方法 |
-| `LeftPanelText` | `string?` | `}` | 获得/设置 左侧面板 Header 显示文本 |
-| `RightPanelText` | `string?` | `}` | 获得/设置 右侧面板 Header 显示文本 |
-| `LeftIcon` | `string?` | `}` | 获得/设置 向左侧转移图标 |
-| `RightIcon` | `string?` | `}` | 获得/设置 向右侧转移图标 |
-| `LeftButtonText` | `string?` | `}` | 获得/设置 左侧按钮显示文本 |
-| `RightButtonText` | `string?` | `}` | 获得/设置 右侧按钮显示文本 |
-| `ShowSearch` | `bool` | `}` | 获得/设置 是否显示搜索框 |
-| `LeftPannelSearchPlaceHolderString` | `string?` | `> LeftPanelSearchPlaceHolderString` | 获得/设置 左侧面板搜索框 placeholder 文字 |
-| `LeftPanelSearchPlaceHolderString` | `string?` | `}` | 获得/设置 左侧面板搜索框 placeholder 文字 |
-| `RightPannelSearchPlaceHolderString` | `string?` | `> RightPanelSearchPlaceHolderString` | 获得/设置 右侧面板搜索框 placeholder 文字 |
-| `RightPanelSearchPlaceHolderString` | `string?` | `}` | 获得/设置 右侧面板搜索框 placeholder 文字 |
-| `Max` | `int` | `}` | 获得/设置 右侧面板包含的最大数量，默认为 0 不限制 |
-| `MaxErrorMessage` | `string?` | `}` | 获得/设置 设置最大值时的错误消息文字 |
-| `Min` | `int` | `}` | 获得/设置 右侧面板包含的最小数量，默认为 0 不限制 |
-| `MinErrorMessage` | `string?` | `}` | 获得/设置 设置最小值时的错误消息文字 |
-| `string` | `Func<SelectedItem,` | `}` | 获得/设置 数据样式回调方法，默认为 null |
-| `LeftHeaderTemplate` | `RenderFragment<List<SelectedItem>>?` | `}` | 获得/设置 左侧 Panel Header 模板 |
-| `LeftItemTemplate` | `RenderFragment<SelectedItem>?` | `}` | 获得/设置 左侧 Panel Item 模板 |
-| `RightHeaderTemplate` | `RenderFragment<List<SelectedItem>>?` | `}` | 获得/设置 右侧 Panel Header 模板 |
-| `RightItemTemplate` | `RenderFragment<SelectedItem>?` | `}` | 获得/设置 右侧 Panel Item 模板 |
-| `Height` | `string?` | `}` | 获得/设置 组件高度 默认值 null 未设置 |
-| `IsWrapItem` | `bool` | `true` | 获得/设置 候选项是否为换行模式 默认 false 不换行 |
-| `ItemWidth` | `string?` | `}` | 获得/设置 候选项宽度 默认 null 未设置 |
-| `IsWrapItemText` | `bool` | `}` | 获得/设置 候选项文本是否为换行 默认 false 不换行 |
+| `Items` | `IEnumerable<TransferItem>?` | `null` | 获得/设置数据源 |
+| `Value` | `List<string>?` | `null` | 获得/设置选中的值 |
+| `ShowSearch` | `bool` | `false` | 获得/设置是否显示搜索框 |
+| `Disabled` | `bool` | `false` | 获得/设置是否禁用 |
+| `Size` | `Size` | `Size.Medium` | 获得/设置尺寸 |
+| `ChildContent` | `RenderFragment?` | `null` | 子组件 |
+
+---
+
+## 事件回调 (EventCallbacks)
+
+| 事件名 | 类型 | 说明 |
+|--------|------|------|
+| `ValueChanged` | `EventCallback<List<string>?>` | 选中值变化回调 |
+
+---
+
+## 数据类 (TransferItem)
+
+`TransferItem` 类定义穿梭框选项的数据。
+
+| 参数名 | 类型 | 默认值 | 说明 |
+|--------|------|--------|------|
+| `Value` | `string?` | `null` | 获得/设置选项值 |
+| `Text` | `string?` | `null` | 获得/设置选项文本 |
+| `Disabled` | `bool` | `false` | 获得/设置是否禁用 |
+| `Group` | `string?` | `null` | 获得/设置分组名称 |
+
+---
+
+## 最佳实践
+
+1. **使用 @bind-Value 双向绑定**：推荐使用 `@bind-Value` 实现双向绑定，简化代码
+2. **提供搜索功能**：对于大量数据，设置 `ShowSearch="true"` 提供搜索功能，提升用户体验
+3. **合理分组**：通过 `Group` 属性对选项进行分组，提升可读性
+4. **处理 ValueChanged 事件**：对于需要在选中值变化时执行逻辑的场景，处理 `ValueChanged` 事件
+5. **自定义显示内容**：对于复杂内容，使用 `ItemTemplate` 自定义选项显示
+6. **与 Select 组件的区别**：`Transfer` 适合在两个列表间移动数据，`Select` 适合单选/多选下拉
