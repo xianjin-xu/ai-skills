@@ -43,7 +43,7 @@
 | Filters | https://www.blazor.zone/filters |
 | FlipClock | https://www.blazor.zone/flip-clock |
 | Footer | https://www.blazor.zone/footer |
-| FullScreen | https://www.blazor.zone/full-screen |
+| FullScreen | https://www.blazor.zone/fullscreen |
 | GoTop | https://www.blazor.zone/go-top |
 | GroupBox | https://www.blazor.zone/group-box |
 | Handwritten | https://www.blazor.zone/handwritten |
