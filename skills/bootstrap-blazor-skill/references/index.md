@@ -1,142 +1,147 @@
-# Bootstrap Blazor 组件索引
+Bootstrap Blazor 组件的快速索引。
+1. 根据用户需求，从下方找到需要使用的组件。
+2. 使用 `read_file` 工具读取详细文档: `C:\Users\{Username}\.bootstrap-blazor-docs\components\{ComponentName}.md` (Windows) 或 `/Users/{username}/.bootstrap-blazor-docs/components/{ComponentName}.md` (Mac)
+3. **只读取用户明确需要的组件，不要一次性读取所有组件**
 
-> 本文档映射组件名称到对应的文档文件，供 AI 读取使用。
-
-| 组件 | 文件 |
-|------|------|
-| Affix | ./components/Affix.md |
-| Alert | ./components/Alert.md |
-| Anchor | ./components/Anchor.md |
-| AnchorLink | ./components/AnchorLink.md |
-| AutoComplete | ./components/AutoComplete.md |
-| AutoFill | ./components/AutoFill.md |
-| Avatar | ./components/Avatar.md |
-| Badge | ./components/Badge.md |
-| Breadcrumb | ./components/Breadcrumb.md |
-| Button | ./components/Button.md |
-| ButtonUpload | ./components/ButtonUpload.md |
-| Calendar | ./components/Calendar.md |
-| Camera | ./components/Camera.md |
-| Captcha | ./components/Captcha.md |
-| Card | ./components/Card.md |
-| Carousel | ./components/Carousel.md |
-| Cascader | ./components/Cascader.md |
-| Checkbox | ./components/Checkbox.md |
-| CheckboxList | ./components/CheckboxList.md |
-| Circle | ./components/Circle.md |
-| ClockPicker | ./components/ClockPicker.md |
-| Collapse | ./components/Collapse.md |
-| ColorPicker | ./components/ColorPicker.md |
-| Console | ./components/Console.md |
-| ContextMenu | ./components/ContextMenu.md |
-| CountUp | ./components/CountUp.md |
-| DateTimePicker | ./components/DateTimePicker.md |
-| DateTimeRange | ./components/DateTimeRange.md |
-| Dialog | ./components/Dialog.md |
-| Display | ./components/Display.md |
-| Divider | ./components/Divider.md |
-| DragDrop | ./components/DragDrop.md |
-| Drawer | ./components/Drawer.md |
-| Dropdown | ./components/Dropdown.md |
-| DropdownWidget | ./components/DropdownWidget.md |
-| Editor | ./components/Editor.md |
-| EditorForm | ./components/EditorForm.md |
-| Empty | ./components/Empty.md |
-| FileIcon | ./components/FileIcon.md |
-| Filters | ./components/Filters.md |
-| FloatingLabel | ./components/FloatingLabel.md |
-| FlipClock | ./components/FlipClock.md |
-| Footer | ./components/Footer.md |
-| FullScreen | ./components/FullScreen.md |
-| GoTop | ./components/GoTop.md |
-| GroupBox | ./components/GroupBox.md |
-| Handwritten | ./components/Handwritten.md |
-| HtmlTag | ./components/HtmlTag.md |
-| Icon | ./components/Icon.md |
-| IFrame | ./components/IFrame.md |
-| ImageViewer | ./components/ImageViewer.md |
-| ImageCropper | ./components/ImageCropper.md |
-| Input | ./components/Input.md |
-| IpAddress | ./components/IpAddress.md |
-| InputGroup | ./components/InputGroup.md |
-| IntersectionObserver | ./components/IntersectionObserver.md |
-| JitViewer | ./components/JitViewer.md |
-| Label | ./components/Label.md |
-| Layout | ./components/Layout.md |
-| Light | ./components/Light.md |
-| ListGroup | ./components/ListGroup.md |
-| ListView | ./components/ListView.md |
-| Logout | ./components/Logout.md |
-| Marquee | ./components/Marquee.md |
-| Mask | ./components/Mask.md |
-| Menu | ./components/Menu.md |
-| Mermaid | ./components/Mermaid.md |
-| Message | ./components/Message.md |
-| MindMap | ./components/MindMap.md |
-| Modal | ./components/Modal.md |
-| ModalDialog | ./components/ModalDialog.md |
-| MultiSelect | ./components/MultiSelect.md |
-| Nav | ./components/Nav.md |
-| Navbar | ./components/Navbar.md |
-| NetworkMonitor | ./components/NetworkMonitor.md |
-| Pagination | ./components/Pagination.md |
-| PdfReader | ./components/PdfReader.md |
-| PdfViewer | ./components/PdfViewer.md |
-| Player | ./components/Player.md |
-| PopConfirm | ./components/PopConfirm.md |
-| Popover | ./components/Popover.md |
-| Print | ./components/Print.md |
-| PulseButton | ./components/PulseButton.md |
-| Progress | ./components/Progress.md |
-| QueryBuilder | ./components/QueryBuilder.md |
-| QRCode | ./components/QRCode.md |
-| Radio | ./components/Radio.md |
-| Rate | ./components/Rate.md |
-| Reconnector | ./components/Reconnector.md |
-| Repeater | ./components/Repeater.md |
-| RibbonTab | ./components/RibbonTab.md |
-| Row | ./components/Row.md |
-| Scroll | ./components/Scroll.md |
-| Search | ./components/Search.md |
-| SearchDialog | ./components/SearchDialog.md |
-| Segmented | ./components/Segmented.md |
-| Select | ./components/Select.md |
-| SelectObject | ./components/SelectObject.md |
-| SelectTable | ./components/SelectTable.md |
-| SelectTree | ./components/SelectTree.md |
-| Skeleton | ./components/Skeleton.md |
-| Slider | ./components/Slider.md |
-| Speech | ./components/Speech.md |
-| Spinner | ./components/Spinner.md |
-| Split | ./components/Split.md |
-| Stack | ./components/Stack.md |
-| Step | ./components/Step.md |
-| SignaturePad | ./components/SignaturePad.md |
-| SweetAlert | ./components/SweetAlert.md |
-| Switch | ./components/Switch.md |
-| SwitchButton | ./components/SwitchButton.md |
-| Tab | ./components/Tab.md |
-| Table | ./components/Table.md |
-| Tag | ./components/Tag.md |
-| Textarea | ./components/Textarea.md |
-| ThemeProvider | ./components/ThemeProvider.md |
-| Timeline | ./components/Timeline.md |
-| TimePicker | ./components/TimePicker.md |
-| Timer | ./components/Timer.md |
-| Toast | ./components/Toast.md |
-| Toggle | ./components/Toggle.md |
-| Toolbar | ./components/Toolbar.md |
-| Tooltip | ./components/Tooltip.md |
-| Transcription | ./components/Transcription.md |
-| Transfer | ./components/Transfer.md |
-| Transition | ./components/Transition.md |
-| Tree | ./components/Tree.md |
-| TreeView | ./components/TreeView.md |
-| Typed | ./components/Typed.md |
-| Upload | ./components/Upload.md |
-| OfficeViewer | ./components/OfficeViewer.md |
-| ValidateForm | ./components/ValidateForm.md |
-| Waterfall | ./components/Waterfall.md |
-| Watermark | ./components/Watermark.md |
-
-
+组件名 | 用途
+------|------
+Affix | 固钉
+Alert | 警告提示
+Anchor | 锚点
+AnchorLink | 锚点链接
+AutoComplete | 自动完成
+AutoFill | 自动填充
+Avatar | 头像
+AvatarUpload | 头像上传
+Badge | 徽章
+Breadcrumb | 面包屑
+Button | 按钮
+ButtonUpload | 按钮上传
+Calendar | 日历
+Camera | 摄像头
+Captcha | 验证码
+Card | 卡片
+CardUpload | 卡片上传
+Carousel | 轮播
+Cascader | 级联选择
+Checkbox | 复选框
+CheckboxList | 复选框列表
+Circle | 进度环
+ClockPicker | 时钟选择器
+Collapse | 折叠面板
+ColorPicker | 颜色选择器
+Console | 控制台
+ContextMenu | 右键菜单
+CountUp | 数字动画
+DateTimePicker | 日期时间选择器
+DateTimeRange | 日期时间范围
+Dialog | 对话框
+Display | 数据展示
+Divider | 分割线
+DragDrop | 拖放
+Drawer | 抽屉
+Dropdown | 下拉菜单
+DropdownWidget | 下拉组件
+Editor | 富文本编辑器
+EditorForm | 编辑表单
+Empty | 空状态
+ExportPdfButton | 导出PDF
+FileIcon | 文件图标
+Filters | 筛选器
+FlipClock | 翻牌时钟
+FloatingLabel | 浮动标签
+Footer | 页脚
+FullScreen | 全屏
+Gantt | 甘特图
+GoTop | 回到顶部
+GroupBox | 分组框
+Handwritten | 手写签名
+HtmlTag | HTML标签
+Icon | 图标
+IFrame | 内嵌框架
+ImageCropper | 图片裁剪
+ImageViewer | 图片查看器
+Input | 输入框
+InputGroup | 输入组
+InputUpload | 输入上传
+IntersectionObserver | 交叉观察器:滚动使元素可见使触发组件回调,用于数据懒加载
+IpAddress | IP地址
+JitViewer | JIT文件预览器
+Label | 标签
+Layout | 布局
+Light | 灯光效果
+ListGroup | 列表组
+ListView | 列表视图
+Logout | 登出
+Marquee | 跑马灯
+Mask | 遮罩
+Menu | 菜单
+Mermaid | Mermaid图表
+Message | 消息提示
+MindMap | 思维导图
+Modal | 模态框
+ModalDialog | 模态对话框
+MultiSelect | 多选
+Nav | 导航
+Navbar | 导航栏
+NetworkMonitor | 网络监控
+OfficeViewer | Office查看器
+Pagination | 分页
+PdfReader | PDF阅读器
+PdfViewer | PDF查看器
+Player | 播放器
+PopConfirm | 气泡确认
+Popover | 气泡卡片
+Print | 打印
+Progress | 进度条
+PulseButton | 脉冲按钮
+QRCode | 二维码
+QueryBuilder | 查询构建器
+Radio | 单选框
+Rate | 评分
+Reconnector | 重连器
+Repeater | 重复器
+RibbonTab | 功能区选项卡
+Row | 行布局
+Scroll | 滚动
+Search | 搜索
+SearchDialog | 搜索对话框
+Segmented | 分段器
+Select | 下拉选择
+SelectObject | 对象选择
+SelectTable | 表格选择
+SelectTree | 树形选择
+SignaturePad | 签名板
+Skeleton | 骨架屏
+Slider | 滑块
+Speech | 语音
+Spinner | 加载指示器
+Split | 分割布局
+Stack | 弹性布局
+Step | 步骤条
+SweetAlert | 甜美弹窗
+Switch | 开关
+SwitchButton | 切换按钮
+Tab | 选项卡
+Table | 表格
+Tag | 标签
+Textarea | 多行文本
+ThemeProvider | 主题提供者
+Timeline | 时间线
+TimePicker | 时间选择器
+Timer | 计时器
+Toast | 吐司通知
+Toggle | 切换按钮
+Toolbar | 工具栏
+Tooltip | 工具提示
+Transcription | 转录
+Transfer | 穿梭框
+Transition | 过渡动画
+Tree | 树形控件
+TreeView | 树形视图
+Typed | 打字效果
+UniverSheet | 表格编辑器
+Upload | 上传
+ValidateForm | 验证表单
+Waterfall | 瀑布流
+Watermark | 水印

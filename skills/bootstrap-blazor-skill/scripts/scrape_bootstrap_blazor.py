@@ -2,6 +2,7 @@
 """
 Bootstrap Blazor 组件文档自动抓取脚本
 使用 Playwright 抓取官方文档页面，提取组件参数表格和代码示例
+不带任何参数则将抓取所有组件，或指定参数则抓取指定组件
 """
 
 import asyncio
