@@ -14,6 +14,7 @@
 | Badge | ./components/Badge.md |
 | Breadcrumb | ./components/Breadcrumb.md |
 | Button | ./components/Button.md |
+| ButtonUpload | ./components/ButtonUpload.md |
 | Calendar | ./components/Calendar.md |
 | Camera | ./components/Camera.md |
 | Captcha | ./components/Captcha.md |
@@ -43,6 +44,7 @@
 | Empty | ./components/Empty.md |
 | FileIcon | ./components/FileIcon.md |
 | Filters | ./components/Filters.md |
+| FloatingLabel | ./components/FloatingLabel.md |
 | FlipClock | ./components/FlipClock.md |
 | Footer | ./components/Footer.md |
 | FullScreen | ./components/FullScreen.md |
@@ -52,11 +54,13 @@
 | HtmlTag | ./components/HtmlTag.md |
 | Icon | ./components/Icon.md |
 | IFrame | ./components/IFrame.md |
-| ImagePreviewer | ./components/ImagePreviewer.md |
 | ImageViewer | ./components/ImageViewer.md |
+| ImageCropper | ./components/ImageCropper.md |
 | Input | ./components/Input.md |
+| IpAddress | ./components/IpAddress.md |
 | InputGroup | ./components/InputGroup.md |
 | IntersectionObserver | ./components/IntersectionObserver.md |
+| JitViewer | ./components/JitViewer.md |
 | Label | ./components/Label.md |
 | Layout | ./components/Layout.md |
 | Light | ./components/Light.md |
@@ -66,7 +70,9 @@
 | Marquee | ./components/Marquee.md |
 | Mask | ./components/Mask.md |
 | Menu | ./components/Menu.md |
+| Mermaid | ./components/Mermaid.md |
 | Message | ./components/Message.md |
+| MindMap | ./components/MindMap.md |
 | Modal | ./components/Modal.md |
 | ModalDialog | ./components/ModalDialog.md |
 | MultiSelect | ./components/MultiSelect.md |
@@ -74,11 +80,16 @@
 | Navbar | ./components/Navbar.md |
 | NetworkMonitor | ./components/NetworkMonitor.md |
 | Pagination | ./components/Pagination.md |
+| PdfReader | ./components/PdfReader.md |
+| PdfViewer | ./components/PdfViewer.md |
+| Player | ./components/Player.md |
 | PopConfirm | ./components/PopConfirm.md |
 | Popover | ./components/Popover.md |
 | Print | ./components/Print.md |
+| PulseButton | ./components/PulseButton.md |
 | Progress | ./components/Progress.md |
 | QueryBuilder | ./components/QueryBuilder.md |
+| QRCode | ./components/QRCode.md |
 | Radio | ./components/Radio.md |
 | Rate | ./components/Rate.md |
 | Reconnector | ./components/Reconnector.md |
@@ -92,6 +103,7 @@
 | Select | ./components/Select.md |
 | SelectObject | ./components/SelectObject.md |
 | SelectTable | ./components/SelectTable.md |
+| SelectTree | ./components/SelectTree.md |
 | Skeleton | ./components/Skeleton.md |
 | Slider | ./components/Slider.md |
 | Speech | ./components/Speech.md |
@@ -99,8 +111,10 @@
 | Split | ./components/Split.md |
 | Stack | ./components/Stack.md |
 | Step | ./components/Step.md |
+| SignaturePad | ./components/SignaturePad.md |
 | SweetAlert | ./components/SweetAlert.md |
 | Switch | ./components/Switch.md |
+| SwitchButton | ./components/SwitchButton.md |
 | Tab | ./components/Tab.md |
 | Table | ./components/Table.md |
 | Tag | ./components/Tag.md |
@@ -120,8 +134,9 @@
 | TreeView | ./components/TreeView.md |
 | Typed | ./components/Typed.md |
 | Upload | ./components/Upload.md |
+| OfficeViewer | ./components/OfficeViewer.md |
 | ValidateForm | ./components/ValidateForm.md |
 | Waterfall | ./components/Waterfall.md |
 | Watermark | ./components/Watermark.md |
 
-> 共 77 个组件
+

@@ -100,7 +100,3 @@ A: 在 `ChildContent` 中使用变量，例如 `<Badge>@Count</Badge>`。
 
 ### Q: 如何在链接中使用徽章？
 A: 将 `Badge` 放在 `<a>` 标签内，例如 `<a class="btn">消息 <Badge>4</Badge></a>`。
-
-## 示例截图
-
-（请参考官方文档截图）

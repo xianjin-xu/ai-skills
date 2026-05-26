@@ -323,7 +323,3 @@ public class Foo
 - `BootstrapInput` - 输入框组件（单行文本）
 - `ValidateForm` - 验证表单组件
 - `BootstrapMarkdown` - Markdown 编辑器组件（富文本）
-
----
-
-**生成说明**：本文档基于 Bootstrap Blazor 官方文档和源码自动生成，涵盖了 Textarea 组件的核心功能和使用方法。
