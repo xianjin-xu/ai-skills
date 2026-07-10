@@ -27,7 +27,7 @@ echo [开始] 正在抓取组件文档...
 echo.
 
 :: 运行抓取脚本
-python scrape_bootstrap_blazor_v2.py
+python scrape_bootstrap_blazor.py
 
 echo.
 echo ========================================

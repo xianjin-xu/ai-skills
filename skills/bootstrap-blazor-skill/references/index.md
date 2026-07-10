@@ -1,4 +1,8 @@
-Bootstrap Blazor 组件的快速索引。
+## 跨组件提示
+- **标签参数**: Input/Select/DateTimePicker/Textarea 等表单组件用 `DisplayText`（无 `Label` 参数），详见组件目录下的 Label.md
+- **本地化**: 项目有 `Locales/*.json` → `DisplayText="@null"` 自动解析，详见 `references/localization.md`
+
+## Bootstrap Blazor 组件的快速索引。
 1. 根据用户需求，从下方找到需要使用的组件。
 2. 使用 `read_file` 工具读取详细文档: `C:\Users\{Username}\.bootstrap-blazor-docs\components\{ComponentName}.md` (Windows) 或 `/Users/{username}/.bootstrap-blazor-docs/components/{ComponentName}.md` (Mac)
 3. **只读取用户明确需要的组件，不要一次性读取所有组件**
@@ -145,3 +149,8 @@ Upload | 上传
 ValidateForm | 验证表单
 Waterfall | 瀑布流
 Watermark | 水印
+
+---
+
+## 深入参考
+- **全局配置** → `references/global-option.md`（调整组件默认行为：弹窗大小、Table 列宽、Toast 时长等）
